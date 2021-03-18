@@ -82,6 +82,10 @@ addLi("Some Text to Test")
 addLi("More Tests before I show Lee")
 
 
-function createHeaderSize(){
-    
+function createHeader(hSize, headerStr){
+    const newHeader = document.createElement(`${hSize}`);
+    newHeader.innerText = `${headerStr}`
+    argumentAppender(newHeader)
 }
+
+createHeader('h3', "Here is my new header")
