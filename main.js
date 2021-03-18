@@ -21,3 +21,9 @@ addURLtoImage("#image-1", "testimg.jpeg")
 addURLtoImage("#image-2", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1oIP_8j9_4BHAKFcY86rFgHaHa%26pid%3DApi&f=1")
 addURLtoImage("#image-3", "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.fyH0MSX841r0jfao1YoYDQHaHa%26pid%3DApi&f=1")
 
+function removeLastUL(){
+    const unorderedListItems = document.getElementById("arguments")
+    //const lastUlItem = unorderedListItems[unorderedListItems.length-1]
+    unorderedListItems.removeChild(unorderedListItems.lastElementChild)
+}
+removeLastUL()
