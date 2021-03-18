@@ -56,12 +56,14 @@ newIMG.src =
 	"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4EKNPedTMBkQIME3HTwCXAHaEK%26pid%3DApi&f=1";
 argumentAppender(newIMG);
 
-function imageSize(imgHeight, imgID) {
+function imageSize(imgH, imgID) {
 	const img = document.getElementById(imgID);
-	img.style.height = imgHeight;
-}
+	img.style.height = imgH;
+} 
 const imgHeight = "30px";
-imageSize(imgHeight, "image-1");
+imageSize("70px", "image-1");
+imageSize(imgHeight, "image-2");
+imageSize(imgHeight, "image-3");
 
 function argumentInvisible(input) {
 	document.getElementById(input).className = "invisible";
