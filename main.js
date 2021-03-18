@@ -62,3 +62,9 @@ function imageSize(imgHeight, imgID) {
 }
 const imgHeight = "30px";
 imageSize(imgHeight, "image-1");
+
+function argumentInvisible(input) {
+	document.getElementById(input).className = "invisible";
+	
+}
+argumentInvisible('thing-1');
