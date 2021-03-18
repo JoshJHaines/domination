@@ -36,3 +36,7 @@ function editFontSize(fontSize, id){
     idItem.style.fontSize = `${fontSize}px`
 }
 editFontSize(6, "h1")
+
+//======== Part 2 ============
+
+
