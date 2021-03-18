@@ -50,3 +50,7 @@ function argumentAppender(domElement) {
 const newElement = document.createElement('li')
 newElement.innerText = "I\'m a new item"
 argumentAppender(newElement);
+
+const newIMG = document.createElement('img')
+newIMG.src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4EKNPedTMBkQIME3HTwCXAHaEK%26pid%3DApi&f=1"
+argumentAppender(newIMG);
