@@ -44,13 +44,21 @@ editFontSize(6, "h1");
 //======== Part 2 ============
 
 function argumentAppender(domElement) {
-    const argsUL = document.querySelector('#arguments')
-    argsUL.appendChild(domElement)
+	const argsUL = document.querySelector("#arguments");
+	argsUL.appendChild(domElement);
 }
-const newElement = document.createElement('li')
-newElement.innerText = "I\'m a new item"
+const newElement = document.createElement("li");
+newElement.innerText = "I'm a new item";
 argumentAppender(newElement);
 
-const newIMG = document.createElement('img')
-newIMG.src = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4EKNPedTMBkQIME3HTwCXAHaEK%26pid%3DApi&f=1"
+const newIMG = document.createElement("img");
+newIMG.src =
+	"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4EKNPedTMBkQIME3HTwCXAHaEK%26pid%3DApi&f=1";
 argumentAppender(newIMG);
+
+function imageSize(imgHeight, imgID) {
+	const img = document.getElementById(imgID);
+	img.style.height = imgHeight;
+}
+const imgHeight = "30px";
+imageSize(imgHeight, "image-1");
