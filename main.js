@@ -68,3 +68,20 @@ function argumentInvisible(input) {
 	
 }
 argumentInvisible('thing-1');
+
+
+//======== Part 3 ============
+
+function addLi(str){
+    const newElement = document.createElement("li");
+    newElement.innerText = `${str}`;
+    argumentAppender(newElement)
+}
+
+addLi("Some Text to Test")
+addLi("More Tests before I show Lee")
+
+
+function createHeaderSize(){
+    
+}
