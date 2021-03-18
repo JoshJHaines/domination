@@ -27,3 +27,12 @@ function removeLastUL(){
     unorderedListItems.removeChild(unorderedListItems.lastElementChild)
 }
 removeLastUL()
+removeLastUL()
+
+
+
+function editFontSize(fontSize, id){
+    const idItem = document.querySelector(`${id}`);
+    idItem.style.fontSize = `${fontSize}px`
+}
+editFontSize(6, "h1")
