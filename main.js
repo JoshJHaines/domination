@@ -7,3 +7,11 @@ const unorderedListItems = document.querySelectorAll("ul li")
 const firstUl = unorderedListItems[0]
 //now line through that item
 firstUl.style.textDecoration = "line-through"
+
+//write a function to change images?
+
+function addURLtoImage(idStr, URLstr){
+    const idItem = document.querySelector(`#${idStr}`);
+    idItem.src = `\"${URLstr}\"`
+
+}
